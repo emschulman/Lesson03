@@ -1,0 +1,41 @@
+/* Color Palette
+Teal #5C9EAD
+Blue #444F6D
+Purple #4C455E
+Beige #BEB9CO
+Off-white #E9E6EA
+----------------*/
+
+/* Global styles
+----------------*/
+body {
+    background: #BEB9CO;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.profile {
+    height: 200px;
+    width: 200px;
+    color: #E9E6EA;
+}
+
+/* Header and footer
+----------------*/
+header, footer {
+    background: #5C9EAD;
+    color: #E9E6EA;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+
+/* Work Experience
+----------------*/
+.work {
+  background:
+}
+
+/* Education
+----------------*/
+.education {
+  background:
+}
