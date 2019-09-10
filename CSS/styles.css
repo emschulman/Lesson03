@@ -1,41 +1,116 @@
 /* Color Palette
 Teal #5C9EAD
 Blue #444F6D
-Purple #4C455E
+Purple #7d709f
 Beige #BEB9CO
 Off-white #E9E6EA
 ----------------*/
 
 /* Global styles
 ----------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-    background: #BEB9CO;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background: #BEB9CO;
+    font-family: 'News Cycle', sans-serif;
+	margin: 0;
+}
+h1 {
+	font-family: 'Beth Ellen', cursive;
+	text-shadow: 1px 1px 4px #4C455E;
+}
+h2 {
+	margin: 5px;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+h3 {
+	margin: 0;
 }
 
-.profile {
-    height: 200px;
-    width: 200px;
-    color: #E9E6EA;
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 40px;
+	overflow: auto;
 }
 
+.col-narrow {
+	width: 30%;
+	float: left;
+	min-height: 175px;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	min-height: 175px;
+	padding-left: 20px;
+}
+
+.col-wide p {
+	margin:5px;
+}
+	
 /* Header and footer
 ----------------*/
 header, footer {
     background: #5C9EAD;
     color: #E9E6EA;
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+/* header */
+header h1, header h2 {
+	margin: 0;
+}
+header h2 {
+	text-shadow: 1px 1px 4px #4C455E;
+}
+
+.profile {
+    width: 200px;
+    color: #E9E6EA;
+	float: left;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+footer a {
+	padding: 15px;
+}
+footer img {
+	height: 100px;
+	width: 100px;
 }
 
 
 /* Work Experience
 ----------------*/
 .work {
-  background:
+	background: #E9E6EA;
+}
+div ul {
+	padding-left: 16px;
+	margin: 5px;
 }
 
 /* Education
 ----------------*/
 .education {
-  background:
+  background: #7d709f;
 }
+.col-narrow p {
+	margin: 0;
+}
+.col-narrow h3 {
+	margin: 0;
+}
+
