@@ -19,13 +19,12 @@ body {
 	background: #BEB9CO;
     font-family: 'News Cycle', sans-serif;
 	margin: 0;
-}
+}	
 h1 {
 	font-family: 'Beth Ellen', cursive;
 	text-shadow: 1px 1px 4px #4C455E;
 }
 h2 {
-	margin: 5px;
 	font-size: 25px;
 	padding-bottom: 20px;
 }
@@ -36,24 +35,70 @@ h3 {
 .content-wrap {
 	max-width: 950px;
 	margin: 0 auto;
-	padding: 40px;
 	overflow: auto;
-}
-
-.col-narrow {
-	width: 30%;
-	float: left;
-	min-height: 175px;
-}
-.col-wide {
-	width: 70%;
-	float: left;
-	min-height: 175px;
-	padding-left: 20px;
 }
 
 .col-wide p {
 	margin:5px;
+}
+
+/* Navigation styles
+----------------*/
+
+.nav-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+nav {
+	width: 100%;
+	background: #E9E6EA;
+	position: fixed;
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav, nav ul {
+	margin: 0;
+	padding-bottom: 0;
+	list-style: none;
+	line-height: 1;
+}
+nav ul li {
+	display: block;
+}
+nav a {
+	width: 130px;
+	text-decoration: none;
+	color: #7d709f;
+	font-weight: 700;
+}
+nav li {
+	width: 130px;
+	float: left;
+}
+nav li ul {
+	position: absolute;
+	left: -999em;
+	width: 130px;
+}
+nav li:hover ul {
+	left: auto;
+	color: #7d709f;
+	background: #E9E6EA;
+}
+nav li ul li:hover {
+	color: #E9E6EA;
+	background: #7d709f;
+}
+nav ul li ul {
+	display: block;
+}
+nav li ul li:hover a {
+	color: #E9E6EA;
+	display: block;
 }
 	
 /* Header and footer
@@ -64,6 +109,12 @@ header, footer {
 }
 
 /* header */
+
+header {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
 header h1, header h2 {
 	margin: 0;
 }
@@ -72,7 +123,7 @@ header h2 {
 }
 
 .profile {
-    width: 200px;
+    max-width: 200px;
     color: #E9E6EA;
 	float: left;
 	margin-right: 30px;
@@ -109,8 +160,35 @@ div ul {
 }
 .col-narrow p {
 	margin: 0;
+	padding: 0;
 }
 .col-narrow h3 {
 	margin: 0;
 }
 
+/*Media Queries
+---------------------*/
+@media (min-width: 900px) {
+	.col-narrow {
+		width: 30%;
+		float: left;
+		min-height: 175px;
+}
+	.col-wide {
+		width: 70%;
+		float: left;
+		min-height: 175px;
+		padding-left: 20px;
+}
+}
+
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+}
+
+#media (max-width: 550px) {
+	
+}
+	
